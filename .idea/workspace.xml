@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c249d1d-ebb9-4b3c-891f-ae14b11fbc93" name="Changes" comment="init">
+    <list default="true" id="4c249d1d-ebb9-4b3c-891f-ae14b11fbc93" name="Changes" comment="MyList">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment2/ActionQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/ActionQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment2/Caterpillar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/Caterpillar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment2/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment2/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment2/MyDoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/MyDoublyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assignment2/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment2/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/MyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment2/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/MyQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment2/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/MyStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment2/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment2/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/Region.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment2/TargetQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/TargetQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment2/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/World.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +69,19 @@
       <option name="project" value="LOCAL" />
       <updated>1678309485854</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="MyList">
+      <created>1678313730186</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678313730186</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="MyList" />
+    <option name="LAST_COMMIT_MESSAGE" value="MyList" />
   </component>
 </project>
