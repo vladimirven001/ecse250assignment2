@@ -17,7 +17,6 @@ public class MyDoublyLinkedList<E> extends MyLinkedList<E> {
 		DNode added = new DNode();
 		if (this.tail != null) {
 			added.element = element;
-			added.next = null;
 			added.prev = this.tail;
 			this.tail.next = added;
 			this.tail = added;
@@ -42,8 +41,75 @@ public class MyDoublyLinkedList<E> extends MyLinkedList<E> {
 		}
 	}
 
-	public boolean addFirst() {
+	public boolean addFirst(E element) {
+		DNode added = new DNode();
+		if (this.tail != null) {
+			added.element = element;
+			added.next = this.head;
+			this.head = added;
+		}
+		else {
+			added.element = element;
+			this.head = added;
+			this.tail = this.head;
+		}
+		return true;
+	}
 
+	public boolean addLast(E element) {
+		return this.add(element);
+	}
+
+	public E removeFirst() {
+		if (this.isEmpty()) {
+			throw new NoSuchElementException("The linked list is empty.");
+		}
+		else {
+			E element = this.head.element;
+			(this.head.next).prev = null;
+			this.head= this.head.next;
+			return element;
+		}
+	}
+
+	public E removeLast() {
+		return this.remove();
+	}
+
+	public E peekFirst() {
+		if (this.isEmpty()) {
+			throw new NoSuchElementException("The linked list is empty.");
+		}
+		else {
+			return this.head.element;
+		}
+	}
+
+	public E peekLast() {
+		if (this.isEmpty()) {
+			throw new NoSuchElementException("The linked list is empty.");
+		}
+		else {
+			return this.tail.element;
+		}
+	}
+
+	public void clear() {
+		while (!this.isEmpty()) {
+			this.remove();
+		}
+	}
+
+	public boolean equals(Object o) {
+		DNode current = this.head;
+		while (current.next != null) {
+			if (current.element != o) {
+				return false;
+			}
+			current.prev = current;
+			current = current.next;
+		}
+		return true;
 	}
 
 	private class DNode {
