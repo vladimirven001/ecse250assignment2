@@ -101,6 +101,7 @@ public class MyDoublyLinkedList<E> extends MyLinkedList<E> {
 	}
 
 	public boolean equals(Object o) {
+		/* This method is false, does not work */
 		DNode current = this.head;
 		while (current.next != null) {
 			if (current.element != o) {
