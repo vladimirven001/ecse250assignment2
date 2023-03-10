@@ -10,7 +10,7 @@ public class MyDoublyLinkedList<E> extends MyLinkedList<E> {
 	
 	
 	/*
-	 * ADD YOUR CODE HERE
+	 My Code
 	 */
 
 	public boolean add(E element) {
@@ -111,6 +111,9 @@ public class MyDoublyLinkedList<E> extends MyLinkedList<E> {
 		}
 		return true;
 	}
+	/*
+	End of my Code
+	 */
 
 	private class DNode {
 		private E element;
