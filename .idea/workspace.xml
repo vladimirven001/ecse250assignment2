@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c249d1d-ebb9-4b3c-891f-ae14b11fbc93" name="Changes" comment="MyStack">
+    <list default="true" id="4c249d1d-ebb9-4b3c-891f-ae14b11fbc93" name="Changes" comment="Fixed my doubly linked list equals and size">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assignment2/MyDoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/MyDoublyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment2/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment2/MyQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,13 +98,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678481720646</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixed my doubly linked list equals and size">
+      <created>1678654197389</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678654197389</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="MyList" />
     <MESSAGE value="MyStack" />
-    <option name="LAST_COMMIT_MESSAGE" value="MyStack" />
+    <MESSAGE value="Fixed my doubly linked list equals and size" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed my doubly linked list equals and size" />
   </component>
 </project>

@@ -1,6 +1,7 @@
 package assignment2;
 
 import java.util.NoSuchElementException;
+import java.util.Queue;
 
 public class MyQueue<E> {
     private MyDoublyLinkedList<E> queue;
@@ -14,12 +15,7 @@ public class MyQueue<E> {
     }
 
     public E dequeue() {
-        if (queue.isEmpty()) {
-            throw new NoSuchElementException("The queue is empty.");
-        }
-        else {
-            return(queue.removeFirst());
-        }
+        return(queue.removeFirst());
     }
 
     public boolean isEmpty() {
@@ -31,10 +27,10 @@ public class MyQueue<E> {
     }
 
     public boolean equals(Object o) {
-        if (o instanceof MyQueue && ) {
+        if (o instanceof MyQueue && (this.queue).equals(((MyQueue) o).queue)) {
             return true;
         }
-        return false
+        return false;
     }
 
 }

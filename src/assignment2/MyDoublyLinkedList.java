@@ -105,14 +105,13 @@ public class MyDoublyLinkedList<E> extends MyLinkedList<E> {
 	}
 
 	public boolean equals(Object o) {
-		/* This method is false, does not work */
 		if (!(o instanceof MyDoublyLinkedList) || ((MyDoublyLinkedList)o).size != this.size) {
 			return false;
 		}
 		DNode current1 = this.head;
 		DNode current2 = ((MyDoublyLinkedList)o).head;
 		while (current1.next != null) {
-			if (current1.element != current2.element) {
+			if (!(current1.element.equals(current2.element))) {
 				return false;
 			}
 			current1 = current1.next;
