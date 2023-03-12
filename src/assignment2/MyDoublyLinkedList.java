@@ -26,6 +26,7 @@ public class MyDoublyLinkedList<E> extends MyLinkedList<E> {
 			this.head = added;
 			this.tail = this.head;
 		}
+		this.size++;
 		return true;
 	}
 
@@ -37,6 +38,7 @@ public class MyDoublyLinkedList<E> extends MyLinkedList<E> {
 			E element = this.tail.element;
 			(this.tail.prev).next = null;
 			this.tail = this.tail.prev;
+			this.size--;
 			return element;
 		}
 	}
@@ -53,6 +55,7 @@ public class MyDoublyLinkedList<E> extends MyLinkedList<E> {
 			this.head = added;
 			this.tail = this.head;
 		}
+		this.size++;
 		return true;
 	}
 
@@ -68,6 +71,7 @@ public class MyDoublyLinkedList<E> extends MyLinkedList<E> {
 			E element = this.head.element;
 			(this.head.next).prev = null;
 			this.head= this.head.next;
+			this.size--;
 			return element;
 		}
 	}
@@ -102,13 +106,17 @@ public class MyDoublyLinkedList<E> extends MyLinkedList<E> {
 
 	public boolean equals(Object o) {
 		/* This method is false, does not work */
-		DNode current = this.head;
-		while (current.next != null) {
-			if (current.element != o) {
+		if (!(o instanceof MyDoublyLinkedList) || ((MyDoublyLinkedList)o).size != this.size) {
+			return false;
+		}
+		DNode current1 = this.head;
+		DNode current2 = ((MyDoublyLinkedList)o).head;
+		while (current1.next != null) {
+			if (current1.element != current2.element) {
 				return false;
 			}
-			current.prev = current;
-			current = current.next;
+			current1 = current1.next;
+			current2 = current2.next;
 		}
 		return true;
 	}
